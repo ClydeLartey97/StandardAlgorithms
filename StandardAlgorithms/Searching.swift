@@ -14,46 +14,6 @@ class Searching {
     
     
     
-    
-    
-    
-    //Starting at the beginning of the data set, each item of data is examined until a match is made. Once the item is found, the search ends. If there is no match, the algorithm must deal with this.
-    func linearSearch(_ input: [Int], desiredNumber: Int) -> Bool {
-        
-      var isFound = false
-        
-      var ListLinearNumbers = input
-        if input.count == 0 {
-            
-            linearList = []
-            isFound = false
-            
-            
-        } else {
-            
-            let ListLinearNumbers = desiredNumber
-            
-            for i in 0...ListLinearNumbers.count - 1 {
-                
-            if linearNumber == ListLinearNumbers[i] {
-                
-              isFound = true
-              break
-            }
-          }
-          if isFound != true {
-            print("Number is not in the list")
-          }
-
-        }
-        return isFound
-    }
-    
-    
-    
-    
-    
-    
     //repeatedly dividing in half the portion of the list that could contain the item, until you've narrowed down the possible locations to just one.
     func binarySearch(_ input: [Int], desiredNumber: Int) -> Bool {
         
@@ -104,4 +64,44 @@ class Searching {
         }
     return isBinaryFound
     }
+    
+    
+    
+    //Starting at the beginning of the data set, each item of data is examined until a match is made. Once the item is found, the search ends. If there is no match, the algorithm must deal with this.
+    func linearSearch(_ input: [Int], desiredNumber: Int) -> Bool {
+        
+      var isFound = false
+        
+      var ListLinearNumbers = input
+        if input.count == 0 {
+            
+            linearList = []
+            isFound = false
+            
+            
+        } else {
+            
+            let ListLinearNumbers = desiredNumber
+            
+            for i in 0...ListLinearNumbers.count - 1 {
+                
+            if linearNumber == ListLinearNumbers[i] {
+                
+              isFound = true
+              break
+            }
+          }
+          if isFound != true {
+            print("Number is not in the list")
+          }
+
+        }
+        return isFound
+    }
+    
+    
+    
+    
+    
+    
 }
