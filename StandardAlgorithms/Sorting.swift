@@ -35,6 +35,9 @@ class Sorting {
       return merge(leftArray, rightArray)
     }
 
+    
+    
+    
     func merge<T: Comparable>(_ left: [T], _ right: [T]) -> [T] {
         
       var leftIndex = 0
